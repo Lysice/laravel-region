@@ -5,6 +5,7 @@ namespace Lysice\Region;
 use GuzzleHttp\Client;
 use Lysice\Region\Exceptions\InvalidArgumentException;
 use Lysice\Region\Exceptions\HttpException;
+use Illuminate\Support\Facades\DB;
 
 class Region {
     protected $url = 'https://restapi.amap.com/v3/config/district';
