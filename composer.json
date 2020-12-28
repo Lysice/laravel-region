@@ -1,0 +1,32 @@
+{
+    "name": "lysice/laravel-region",
+    "description": "a region package for laravel",
+    "keywords": ["composer", "weather", "laravel"],
+    "autoload": {
+        "psr-4": {
+            "Lysice\\Region\\": "src",
+            "Lysice\\Region\\Exceptions\\" : "Exceptions"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Lysice\\Region\\RegionServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lysice",
+            "email": "snowist@126.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5",
+        "mockery/mockery": "~1.1"
+    }
+}
