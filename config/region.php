@@ -5,5 +5,4 @@ return [
     'connection' => 'mysql',
     'key' => '',
     'prefix' => '',
-    'model' => 'Areas'
 ];
