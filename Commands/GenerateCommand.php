@@ -1,6 +1,6 @@
 <?php
 
-namespace Lysice\Commands;
+namespace Lysice\Region\Commands;
 
 use Illuminate\Console\Command;
 

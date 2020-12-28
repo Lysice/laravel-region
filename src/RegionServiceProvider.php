@@ -1,7 +1,7 @@
 <?php
 
 namespace Lysice\Region;
-use Lysice\Region\GenerateCommand;
+use Lysice\Region\Commands\GenerateCommand;
 
 class RegionServiceProvider extends \Illuminate\Support\ServiceProvider
 {
