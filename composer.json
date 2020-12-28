@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "Lysice\\Region\\": "src",
-            "Lysice\\Region\\Exceptions\\" : "Exceptions"
+            "Lysice\\Region\\Exceptions\\" : "Exceptions",
+            "Lysice\\Region\\Exceptions\\" : "Commands"
         }
     },
     "extra" : {
