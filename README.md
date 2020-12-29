@@ -27,7 +27,7 @@ config文件里生成的region.php中的配置项一共有四个分别是
 ```
     public function region(Region $region) 
     {
-        $response = $region->region('');
+        $response = $region->region();
     }
 ```
 ### 服务名访问实例方法
