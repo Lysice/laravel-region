@@ -124,9 +124,9 @@ class Region {
 
         $table = $this->data['prefix'] . $this->data['table'];
         $chunk_datas = array_chunk($insertData, 100);
-        DB::connection($data['connection'])->table($table)->trucate();
+        DB::connection($this->data['connection'])->table($table)->trucate();
         foreach($chunk_datas as $chunk) {
-            DB::connection($data['connection'])->table($table)->insert($data);
+            DB::connection($this->data['connection'])->table($table)->insert($chunk);
         }
     }
 }
