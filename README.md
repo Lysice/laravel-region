@@ -22,23 +22,28 @@ config文件里生成的region.php中的配置项一共有四个分别是
 - key 高德开放平台创建应用的key
 - prefix 标识要生成的表名前缀
 
-## 3.生成数据
-### 方法参数注入Region实例生成
+### 3.生成迁移表
+```
+    php artisan migrate
+```
+### 4.生成数据 可以使用三种方式
+#### 方法参数注入Region实例生成
 ```
     public function region(Region $region) 
     {
         $response = $region->region();
     }
 ```
-### 服务名访问实例方法
+#### 服务名访问实例方法
     public function edit() 
     {
         $response = app('region')->region();
     }
-### 命令行执行
+#### 命令行执行
 ```
     php artisan region:generate
 ```
+之后在数据库你生成的表结构
 ## 参考
 高德开放平台接口
 
