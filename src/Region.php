@@ -30,7 +30,7 @@ class Region {
         if (!isset($this->data['key']) or empty($this->data['key'])) {
             throw new InvalidArgumentException('Invalid argument key: not exists!');
         }
-        if (!isset($this->data['table']) or empty($this->data['table']) {
+        if (!isset($this->data['table']) or empty($this->data['table'])) {
             throw new InvalidArgumentException('Invalid argument table: not exists!');
         }
         if (!isset($this->data['connection']) or empty($this->data['connection'])) {
